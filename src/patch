@@ -212,6 +212,7 @@ done
 # Add everything but the modified Composer files
 git add .
 git reset composer.*
+echo "${GREEN}> git commit -m \"Patch framework $FROMTO\" --no-verify${RESET}"
 git commit -m "Patch framework $FROMTO" --no-verify
 
 # Get rid of the now-corrupt Composer files
